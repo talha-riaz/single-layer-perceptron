@@ -23,10 +23,10 @@ def accuracy(weights, X):
     return sum/float(len(X))
     
 #function to train the model based on dataset with labels
-def fit2 (weights, X, learning_rate = 0.01, epochs = 500):
+def fit (weights, X, learning_rate = 0.01, epochs = 500):
     for epoch in range(epochs):
         print("Epoch: " + str(epoch))
-        print("Accuracy: " + str(self.accuracy(weights, X))
+        print("Accuracy: " + str(accuracy(weights, X))
         for i in range (len(X)):
             X_row = X[i][:-1]
             prediction = predict(weights,X_row)
