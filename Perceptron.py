@@ -3,12 +3,14 @@
 #the activation function
 def activation(x):
     return 1 if (x>0.0) else 0
-#predicts class based on trained weights and unseen X data    
+#predicts class based on trained weights and unseen X data
+
 def predict(weights, x):
     sum = 0.0
     for w,x in zip(weights,x):
         sum += w*x
     return activation(sum)
+    
 #returns the accuracy of the model 
 #based on trained weights and dataset (including labels)
 def accuracy(weights, X):
@@ -19,6 +21,7 @@ def accuracy(weights, X):
         if prediction == X[i][-1]:
             sum+=1.0
     return sum/float(len(X))
+    
 #function to train the model based on dataset with labels
 def fit2 (weights, X, learning_rate = 0.01, epochs = 500):
     for epoch in range(epochs):
