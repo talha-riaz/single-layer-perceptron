@@ -1,5 +1,6 @@
 # Single Layer Perceptron
 Implementation of the single layer perceptron neural network. 
+A single layer perceptron is the simplest form of neural network - rather inspired by a biological neuron.
 
 ![](https://github.com/talha-riaz/single-layer-perceptron/blob/master/img/p.png)
 
